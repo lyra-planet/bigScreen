@@ -1,21 +1,24 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { connect } from 'dva';
-import styles from './IndexPage.css';
+import { IndexPageStyle } from './style';
+import Top from '../components/top';
 
-function IndexPage() {
-  return (
-    <div className={styles.normal}>
-      <h1 className={styles.title}>Yay! Welcome to dva!</h1>
-      <div className={styles.welcome} />
-      <ul className={styles.list}>
-        <li>To get started, edit <code>src/index.js</code> and save to reload.</li>
-        <li><a href="https://github.com/dvajs/dva-docs/blob/master/v1/en-us/getting-started.md">Getting Started</a></li>
-      </ul>
-    </div>
-  );
+class IndexPage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  render() {
+    return (
+      <IndexPageStyle>
+        <div className='react_view_box'>
+          <div className='boder_text'>
+            <Top></Top>
+          </div>
+        </div>
+      </IndexPageStyle>
+    );
+  }
 }
-
-IndexPage.propTypes = {
-};
 
 export default connect()(IndexPage);

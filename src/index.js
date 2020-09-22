@@ -1,5 +1,5 @@
 import dva from 'dva';
-import './index.css';
+import './utils/flexible'
 
 // 1. Initialize
 const app = dva();

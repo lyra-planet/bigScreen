@@ -1,7 +1,8 @@
 ## 一、项目描述
-- [**Vue版本请点击这里(oﾟvﾟ)ノ！！！**](https://gitee.com/MTrun/big-screen-vue-datav)
 
-- 一个基于 react、datav、Echart 框架的 " **数据大屏项目** "，通过react组件实现数据动态刷新渲染，内部图表可实现自由替换。部分图表使用 DataV 自带组件，可进行更改，详情请点击下方 DataV 文档。
+- [**Vue 版本请点击这里(o ﾟ v ﾟ)ノ！！！**](https://gitee.com/MTrun/big-screen-vue-datav)
+
+- 一个基于 react、datav、Echart 框架的 " **数据大屏项目** "，通过 react 组件实现数据动态刷新渲染，内部图表可实现自由替换。部分图表使用 DataV 自带组件，可进行更改，详情请点击下方 DataV 文档。
 - 项目需要全屏展示（按 F11）。
 - 项目部分区域使用了全局注册方式，增加了打包体积，在实际运用中请使用**按需引入**。
 - 拉取项目之后，建议按照自己的功能区域重命名文件，现以简单的位置进行区分。
@@ -27,3 +28,15 @@
 | assets / index.scss | Index 界面的 CSS 文件                               |
 | components/echart   | 所有 echart 图表（按照位置来命名）                  |
 | common/flexible.js  | flexible 插件代码（适配屏幕尺寸，定制化修改）       |
+
+## 三、解决 Dva 版本 history 报错的问题
+
+找到 node_modules 中的 dva 包，修改 lib/index.js。
+
+22 行：
+
+```js
+var _createHashHistory = _interopRequireDefault(
+  require('history').createHashHistory
+);
+```
