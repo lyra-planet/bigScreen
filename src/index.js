@@ -1,11 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './asstes/style/globalStyle.less';
-import App from './App';
+import dva from 'dva';
+import './index.css';
 
-ReactDOM.render(
-  <React.Fragment>
-    <App />
-  </React.Fragment>,
-  document.getElementById('root')
-);
+// 1. Initialize
+const app = dva();
+
+// 2. Plugins
+// app.use({});
+
+// 3. Model
+// app.model(require('./models/example').default);
+
+// 4. Router
+app.router(require('./router').default);
+
+// 5. Start
+app.start('#root');
