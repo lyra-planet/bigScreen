@@ -20,6 +20,7 @@ export const Globalstyle = createGlobalStyle`
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    box-sizing: border-box;
   }
   article, aside, details, figcaption, figure, 
   footer, header, hgroup, menu, nav, section {
@@ -52,5 +53,11 @@ export const Globalstyle = createGlobalStyle`
     -webkit-line-clamp: 2;
     line-clamp: 2;
     -webkit-box-orient: vertical;
+  }
+
+  // 自定义模块
+  .default-chart{
+    width: 100%;
+    height: 100%;
   }
 `;

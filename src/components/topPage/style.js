@@ -3,10 +3,24 @@ export const TopBox = styled.div`
   .top_box {
     display: flex;
     justify-content: center;
-    padding-top: 0.25rem;
+
+    .top_decoration10 {
+      width: 33.3%;
+      height: 0.0625rem;
+    }
+
+    .top_decoration10_reverse {
+      transform: rotateY(180deg);
+    }
+
     .title-box {
       display: flex;
       justify-content: center;
+
+      .top_decoration8 {
+        width: 2.5rem;
+        height: 0.625rem;
+      }
 
       .title {
         position: relative;
@@ -22,6 +36,11 @@ export const TopBox = styled.div`
           left: 50%;
           color: #fff;
           transform: translate(-50%);
+        }
+        
+        .top_decoration6 {
+          width: 3.125rem;
+          height: 0.1rem;
         }
 
         .title-bototm {
