@@ -4,9 +4,9 @@ import 'echarts/lib/component/title';
 import 'echarts/lib/component/grid';
 import 'echarts/lib/chart/line';
 import Chart from '../../../utils/chart';
-import { options } from './options';
+import { trafficOptions } from './options';
 
-export class TrafficSituation extends Component {
+class TrafficSituation extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -15,9 +15,9 @@ export class TrafficSituation extends Component {
     };
   }
   async componentWillMount() {
-    // 装载前 获取数据
+    // 装载前获取数据
     this.setState({
-      option: options,
+      option: trafficOptions,
     });
   }
 
