@@ -13,8 +13,12 @@
 
 1.  [DataV 官方文档（建议使用之前先浏览）](http://datav-react.jiaminghi.com/guide/)
 2.  [echarts 实例](https://www.echartsjs.com/examples/zh/index.html)，[echarts 官方文档](https://www.echartsjs.com/zh/option.html#title)
-3.  [Vue 官方文档](https://react.docschina.org/docs/getting-started.html)
+3.  [React 官方文档](https://react.docschina.org/docs/introducing-jsx.html)
+4.  [Dva 官方文档](https://dvajs.com/guide/)
 
+现阶段完成的静态数据内容图（正在开发moke数据）：
+
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0926/160114_40ed2db4_4964818.jpeg "958663dbbb3043d36f223dd7e990e51.jpg")
 ## 二、主要文件介绍
 
 | 文件                | 作用/功能                                           |
