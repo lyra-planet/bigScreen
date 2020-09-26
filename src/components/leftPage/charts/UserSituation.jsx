@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { userOptions } from './options';
 import { ScrollBoard } from '@jiaminghi/data-view-react';
 
-class UserSituation extends Component {
+class UserSituation extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
       config: {
         // 表头背景色
-        headerBGC: '#5953CC',
+        headerBGC: '#443dc5',
         // 奇数行背景色
         oddRowBGC: '#09184F',
         // 偶数行背景色
@@ -27,6 +27,7 @@ class UserSituation extends Component {
     };
   }
 
+  // 使用 DidMount 会导致列表严重卡顿，还没研究原因
   async componentWillMount() {
     // 装载前获取数据
     this.setState({
@@ -41,7 +42,7 @@ class UserSituation extends Component {
         <ScrollBoard
           config={config}
           style={{
-            width: '430px',
+            width: '438px',
             height: '550px',
           }}></ScrollBoard>
       </div>

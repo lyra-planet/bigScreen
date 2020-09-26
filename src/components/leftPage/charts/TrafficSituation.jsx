@@ -1,12 +1,8 @@
-import React, { Component } from 'react';
-import 'echarts/lib/component/tooltip';
-import 'echarts/lib/component/title';
-import 'echarts/lib/component/grid';
-import 'echarts/lib/chart/line';
+import React, { PureComponent } from 'react';
 import Chart from '../../../utils/chart';
 import { trafficOptions } from './options';
 
-class TrafficSituation extends Component {
+class TrafficSituation extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,7 +10,7 @@ class TrafficSituation extends Component {
       option: '',
     };
   }
-  async componentWillMount() {
+  async componentDidMount() {
     // 装载前获取数据
     this.setState({
       option: trafficOptions,

@@ -47,55 +47,51 @@ export const trafficOptions = {
     bottom: '10%',
     // containLabel: true
   },
-  xAxis: [
-    {
-      type: 'category',
-      axisLine: {
-        show: true,
-      },
-      splitArea: {
-        // show: true,
+  xAxis: {
+    type: 'category',
+    axisLine: {
+      show: true,
+    },
+    splitArea: {
+      // show: true,
+      color: '#f00',
+      lineStyle: {
         color: '#f00',
-        lineStyle: {
-          color: '#f00',
-        },
       },
-      axisLabel: {
-        color: '#fff',
-      },
-      splitLine: {
-        show: false,
-      },
-      boundaryGap: false,
-      data: ['A', 'B', 'C', 'D', 'E', 'F'],
     },
-  ],
+    axisLabel: {
+      color: '#fff',
+    },
+    splitLine: {
+      show: false,
+    },
+    boundaryGap: false,
+    data: ['A', 'B', 'C', 'D', 'E', 'F'],
+  },
 
-  yAxis: [
-    {
-      type: 'value',
-      min: 0,
-      splitLine: {
-        show: true,
-        lineStyle: {
-          color: 'rgba(255,255,255,0.1)',
-        },
-      },
-      axisLine: {
-        show: true,
-      },
-      axisLabel: {
-        show: true,
-        margin: 10,
-        textStyle: {
-          color: '#d1e6eb',
-        },
-      },
-      axisTick: {
-        show: false,
+  yAxis: {
+    type: 'value',
+    min: 0,
+    splitLine: {
+      show: true,
+      lineStyle: {
+        color: 'rgba(255,255,255,0.1)',
       },
     },
-  ],
+    axisLine: {
+      show: true,
+    },
+    axisLabel: {
+      show: true,
+      margin: 10,
+      textStyle: {
+        color: '#d1e6eb',
+      },
+    },
+    axisTick: {
+      show: false,
+    },
+  },
   series: [
     {
       name: '出口流量',
@@ -207,7 +203,7 @@ export const trafficOptions = {
 export const userOptions = {
   header: ['用户', '时间', '状态'],
   data: [
-    ['用户1', '2020-11-11 12:00 12:00', '在线'],
+    ['用户1', '2020-11-11 12:00', '在线'],
     ['用户2', '2020-11-11 12:00', '离线'],
     ['用户3', '2020-11-11 12:00', '在线'],
     ['用户4', '2020-11-11 12:00', '在线'],

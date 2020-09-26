@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
-import { LeftPage } from './style';
+import { LeftPage, LeftTopBox, LeftBottomBox } from './style';
+import { ModuleTitle } from '../../style/globalStyledSet';
 import { BorderBox12, BorderBox13 } from '@jiaminghi/data-view-react';
 import TrafficSituation from './charts/TrafficSituation';
 import UserSituation from './charts/UserSituation';
@@ -17,13 +18,13 @@ class index extends PureComponent {
     return (
       <LeftPage>
         {/* 顶部图表 */}
-        <div className='left-top-box'>
+        <LeftTopBox>
           <BorderBox12 className='left-top-borderBox12'>
             <div className='left-top'>
-              <h3>
-                <i className='iconfont'>&#xe790;</i>
+              <ModuleTitle>
+                <i className='iconfont'>&#xe78f;</i>
                 <span>今日流量态势</span>
-              </h3>
+              </ModuleTitle>
               <div className='title-dis'>
                 <span>
                   平均接纳次数(小时):
@@ -37,20 +38,20 @@ class index extends PureComponent {
               <TrafficSituation></TrafficSituation>
             </div>
           </BorderBox12>
-        </div>
+        </LeftTopBox>
 
         {/* 底部图表 */}
-        <div className='left-bottom-box'>
+        <LeftBottomBox>
           <BorderBox13 className='left-bottom-borderBox13'>
             <div className='left-bottom'>
-              <h3>
+              <ModuleTitle>
                 <i className='iconfont'>&#xe88e;</i>
                 <span>用户数据状态</span>
-              </h3>
+              </ModuleTitle>
               <UserSituation></UserSituation>
             </div>
           </BorderBox13>
-        </div>
+        </LeftBottomBox>
       </LeftPage>
     );
   }

@@ -25,10 +25,12 @@ export default class Chart extends PureComponent {
     // 监听屏幕缩放，重新绘制 echart 图表
     window.addEventListener('resize', debounce(this.resize, 100));
   }
+
   componentDidUpdate() {
     // 每次更新组件都重置
     this.setOption(this.props.option);
   }
+
   componentWillUnmount() {
     // 组件卸载前卸载图表
     this.dispose();
