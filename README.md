@@ -1,6 +1,6 @@
 ## 一、项目描述
 
-- [**Vue 版本请点击这里(o ﾟ v ﾟ)ノ！！！**](https://gitee.com/MTrun/big-screen-vue-datav)
+- [**Vue 版本请点击这里查看，也很不错的(o ﾟ v ﾟ)ノ！！！**](https://gitee.com/MTrun/big-screen-vue-datav)
 
 - 一个基于 react、datav、Echart 框架的 " **数据大屏项目** "，通过 react 组件实现数据动态刷新渲染，内部图表可实现自由替换。部分图表使用 DataV 自带组件，可进行更改，详情请点击下方 DataV 文档。
 - 项目需要全屏展示（按 F11）。
@@ -17,8 +17,7 @@
 4.  [Dva 官方文档](https://dvajs.com/guide/)
 
 现阶段完成的静态数据内容图（正在开发moke数据）：
-
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0926/160114_40ed2db4_4964818.jpeg "958663dbbb3043d36f223dd7e990e51.jpg")
+![界面展示](https://images.gitee.com/uploads/images/2020/0927/205317_db15e619_4964818.gif "未标题-56.gif")
 ## 二、主要文件介绍
 
 | 文件                | 作用/功能                                           |
