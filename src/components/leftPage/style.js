@@ -4,6 +4,7 @@ export const LeftPage = styled.div`
   width: 6.25rem;
   height: auto;
   padding: 0.2rem;
+  padding-bottom: 0px;
 `;
 
 export const LeftTopBox = styled.div`

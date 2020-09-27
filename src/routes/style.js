@@ -5,7 +5,7 @@ export const IndexPageStyle = styled.div`
   position: relative;
   overflow: hidden;
   margin: 0px;
-  padding: 0.1rem 0 0 0;
+  padding: 10px 0 0 0;
   background: url(${pageBg}) center center no-repeat;
   background-size: cover;
 `;
