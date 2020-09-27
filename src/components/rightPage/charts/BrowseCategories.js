@@ -22,8 +22,8 @@ class BrowseCategories extends PureComponent {
     return (
       <div
         style={{
-          width: '430px',
-          height: '200px',
+          width: '5.375rem',
+          height: '2.5rem',
         }}>
         <Chart renderer={renderer} option={this.state.option} />;
       </div>

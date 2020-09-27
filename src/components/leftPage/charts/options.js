@@ -45,7 +45,6 @@ export const trafficOptions = {
     left: '10%',
     right: '5%',
     bottom: '10%',
-    // containLabel: true
   },
   xAxis: {
     type: 'category',
@@ -53,7 +52,6 @@ export const trafficOptions = {
       show: true,
     },
     splitArea: {
-      // show: true,
       color: '#f00',
       lineStyle: {
         color: '#f00',

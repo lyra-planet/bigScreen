@@ -293,7 +293,7 @@ export const OfflinePortalOptions = {
   yAxis: [
     {
       type: 'value',
-      name: '人',
+      name: '单位/人',
       nameTextStyle: {
         color: '#BCDCFF',
       },

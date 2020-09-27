@@ -18,9 +18,9 @@ class index extends PureComponent {
           unit: '点击/个',
         },
         {
-          title: '金融流量',
-          number: 4.65,
-          unit: ' 万/小时 ',
+          title: '公众号流量',
+          number: 62356,
+          unit: '点击/篇',
         },
         {
           title: '安全服务流量',
@@ -28,9 +28,9 @@ class index extends PureComponent {
           unit: '攻击/小时',
         },
         {
-          title: '公众号流量',
-          number: 62356,
-          unit: '点击/篇',
+          title: '金融流量',
+          number: 4.65,
+          unit: ' 万/小时 ',
         },
         {
           title: '通信流量',

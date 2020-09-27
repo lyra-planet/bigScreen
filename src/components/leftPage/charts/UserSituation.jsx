@@ -42,8 +42,8 @@ class UserSituation extends PureComponent {
         <ScrollBoard
           config={config}
           style={{
-            width: '438px',
-            height: '550px',
+            width: '5.475rem',
+            height: '6.875rem',
           }}></ScrollBoard>
       </div>
     );

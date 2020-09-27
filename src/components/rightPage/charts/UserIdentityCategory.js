@@ -29,8 +29,8 @@ class UserSituation extends PureComponent {
         <CapsuleChart
           config={config}
           style={{
-            width: '468px',
-            height: '210px',
+            width: '5.85rem',
+            height: '2.625rem',
           }}></CapsuleChart>
       </div>
     );

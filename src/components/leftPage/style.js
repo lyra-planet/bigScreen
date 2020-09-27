@@ -8,26 +8,26 @@ export const LeftPage = styled.div`
 
 export const LeftTopBox = styled.div`
   position: relative;
-  height: 350px;
+  height: 4.375rem;
   width: 100%;
   .left-top-borderBox12 {
     width: inherit;
     height: inherit;
-    padding: 15px;
+    padding: 0.1875rem;
     .left-top {
       width: 100%;
       height: 100%;
       border-radius: 10px;
       background-color: rgba(19, 25, 47, 0.6);
       .title-dis {
-        margin-top: 15px;
+        margin-top: 0.1875rem;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        font-size: 16px;
+        font-size: 0.2rem;
         color: #c0c9d2;
         &-keyword {
-          padding-left: 10px;
+          padding-left: 0.125rem;
           color: #47dae8;
         }
       }
@@ -36,13 +36,13 @@ export const LeftTopBox = styled.div`
 `;
 export const LeftBottomBox = styled.div`
   position: relative;
-  margin-top: 20px;
-  height: 620px;
+  margin-top: 0.25rem;
+  height: 7.75rem;
   width: 100%;
   .left-bottom-borderBox13 {
     width: inherit;
     height: inherit;
-    padding: 20px 15px;
+    padding: 0.25rem 0.1875rem;
     .left-bottom {
       width: 100%;
       height: 100%;

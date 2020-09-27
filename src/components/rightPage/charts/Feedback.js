@@ -22,8 +22,8 @@ class Feedback extends PureComponent {
     return (
       <div
         style={{
-          width: '100px',
-          height: '100px',
+          width: '1.25rem',
+          height: '1.25rem',
         }}>
         <Chart renderer={renderer} option={this.state.option} />;
       </div>

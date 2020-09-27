@@ -1,10 +1,13 @@
 import styled from 'styled-components';
+import { TitleColor } from '../../style/color'
+
 export const TopBox = styled.div`
   .top_box {
     display: flex;
     justify-content: center;
 
     .top_decoration10 {
+      position: relative;
       width: 33.3%;
       height: 0.0625rem;
     }
@@ -37,7 +40,7 @@ export const TopBox = styled.div`
           color: #fff;
           transform: translate(-50%);
         }
-        
+
         .top_decoration6 {
           width: 3.125rem;
           height: 0.1rem;
@@ -52,4 +55,16 @@ export const TopBox = styled.div`
       } // end title
     } // end title-box
   } // end top_box
+`;
+
+export const TimeBox = styled.div`
+  position: absolute;
+  right: 0.375rem;
+  top: 0.5rem;
+  text-align: right;
+  color: #fff;
+  h3{
+    font-size: 0.225rem;
+    color: ${TitleColor};
+  }
 `;

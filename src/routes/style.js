@@ -3,11 +3,9 @@ import pageBg from '../assets/pageBg.png';
 
 export const IndexPageStyle = styled.div`
   position: relative;
-  width: 100vw;
-  height: 100vh;
   overflow: hidden;
   margin: 0px;
-  padding: 0.2rem;
+  padding: 0.1rem 0 0 0;
   background: url(${pageBg}) center center no-repeat;
   background-size: cover;
 `;

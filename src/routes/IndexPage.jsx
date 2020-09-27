@@ -14,19 +14,17 @@ class IndexPage extends Component {
   }
   render() {
     return (
-      <FullScreenContainer>
-        <IndexPageStyle>
-          <TopPage></TopPage>
-          <IndexPageContent>
-            {/* 左侧内容 */}
-            <LeftPage></LeftPage>
-            {/* 中间内容 */}
-            <CenterPage className='center-page'></CenterPage>
-            {/* 右侧内容 */}
-            <RightPage></RightPage>
-          </IndexPageContent>
-        </IndexPageStyle>
-      </FullScreenContainer>
+      <IndexPageStyle>
+        <TopPage></TopPage>
+        <IndexPageContent>
+          {/* 左侧内容 */}
+          <LeftPage></LeftPage>
+          {/* 中间内容 */}
+          <CenterPage className='center-page'></CenterPage>
+          {/* 右侧内容 */}
+          <RightPage></RightPage>
+        </IndexPageContent>
+      </IndexPageStyle>
     );
   }
 }
