@@ -18,21 +18,8 @@
 
 现阶段完成的静态数据内容图（正在开发moke数据）：
 ![界面展示](https://images.gitee.com/uploads/images/2020/0927/205317_db15e619_4964818.gif "未标题-56.gif")
-## 二、主要文件介绍
 
-| 文件                | 作用/功能                                           |
-| ------------------- | --------------------------------------------------- |
-| mian.js             | 主目录文件，全局引入了引入 vue-awesome              |
-| utils               | 工具函数与 mixins 函数等                            |
-| views/ index.vue    | 项目主结构                                          |
-| views/其余文件      | 界面各个区域组件（按照位置来命名）ajax 接口请求位置 |
-| assets              | 静态资源目录，放置 logo 与背景图片                  |
-| assets / style.scss | 通用 CSS 文件，全局项目快捷样式调节                 |
-| assets / index.scss | Index 界面的 CSS 文件                               |
-| components/echart   | 所有 echart 图表（按照位置来命名）                  |
-| common/flexible.js  | flexible 插件代码（适配屏幕尺寸，定制化修改）       |
-
-## 三、解决 Dva 版本 history 报错的问题
+### 解决 Dva 版本 history 报错的问题
 
 找到 node_modules 中的 dva 包，修改 lib/index.js。
 
