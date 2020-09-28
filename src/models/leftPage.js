@@ -1,9 +1,15 @@
 
 export default {
 
-  namespace: 'example',
+  // 命名空间 (必填)
+  namespace: 'leftPage',
 
-  state: {},
+  state: {
+    trafficSitua:{},
+    userSitua:{
+      
+    }
+  },
 
   subscriptions: {
     setup({ dispatch, history }) {  // eslint-disable-line

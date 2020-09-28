@@ -4,6 +4,7 @@ export const CenterPage = styled.div`
   margin-top: 0.25rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
 `;
 
 export const CenterBottom = styled.div`

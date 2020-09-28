@@ -58,13 +58,13 @@ export const trafficOptions = {
       },
     },
     axisLabel: {
-      color: '#fff',
+      color: '#BCDCF0',
     },
     splitLine: {
       show: false,
     },
     boundaryGap: false,
-    data: ['A', 'B', 'C', 'D', 'E', 'F'],
+    data: ['9:00', '12:00', '15:00', '18:00', '21:00', '00:00'],
   },
 
   yAxis: {

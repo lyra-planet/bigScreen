@@ -1,5 +1,5 @@
 import dva from 'dva';
-import './utils/flexible'
+import './utils/flexible';
 
 // 1. Initialize
 const app = dva();
@@ -8,9 +8,9 @@ const app = dva();
 // app.use({});
 
 // 3. Model
-// app.model(require('./models/example').default);
+app.model(require('./models/leftPage').default);
 
-// 4. Router
+// 4. Router(import引入方式就是需要default)
 app.router(require('./router').default);
 
 // 5. Start

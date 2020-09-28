@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'dva';
-import { FullScreenContainer } from '@jiaminghi/data-view-react';
 import { IndexPageStyle, IndexPageContent } from './style';
 import TopPage from '../components/topPage';
 import LeftPage from '../components/leftPage';
