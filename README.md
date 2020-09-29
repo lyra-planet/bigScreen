@@ -157,3 +157,11 @@ var _createHashHistory = _interopRequireDefault(
 ### 使用 Hook
 
 如果需要使用 `Hook` 而非 Class 编写代码，请删除 `node_modules` 资源文件，然后修改 `package.json` 中的 React 版本（>=16.8），再重新拉取资源文件。
+
+## 四、更新情况
+
+后面可能会请朋友将项目修改为 Hook版本，切一个分支出来，也许会鸽🕊（不要打我）。
+
+## 五、其余
+
+这个项目是个人的作品，难免会有问题和 BUG，如果有问题请进行评论，我也会尽力去更新，自己也在前端学习的路上，欢迎交流，非常感谢！
