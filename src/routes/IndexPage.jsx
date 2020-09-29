@@ -14,14 +14,14 @@ class IndexPage extends Component {
   render() {
     return (
       <IndexPageStyle>
-        <TopPage></TopPage>
+        <TopPage />
         <IndexPageContent>
           {/* 左侧内容 */}
-          <LeftPage></LeftPage>
+          <LeftPage />
           {/* 中间内容 */}
-          <CenterPage className='center-page'></CenterPage>
+          <CenterPage className='center-page' />
           {/* 右侧内容 */}
-          <RightPage></RightPage>
+          <RightPage />
         </IndexPageContent>
       </IndexPageStyle>
     );
