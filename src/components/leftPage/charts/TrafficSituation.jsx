@@ -7,28 +7,26 @@ class TrafficSituation extends PureComponent {
     super(props);
     this.state = {
       renderer: 'canvas',
-      option: '',
     };
-  }
-  async componentDidMount() {
-    // 装载前获取数据
-    this.setState({
-      option: trafficOptions,
-    });
   }
 
   render() {
-    const renderer = this.state.renderer;
+    const { renderer } = this.state;
+    const { trafficSitua } = this.props;
     return (
       <div
         style={{
           width: '5.375rem',
           height: '3.125rem',
         }}>
-        <Chart renderer={renderer} option={this.state.option} />;
+        {trafficSitua ? (
+          <Chart renderer={renderer} option={trafficOptions(trafficSitua)} />
+        ) : (
+          ''
+        )}
       </div>
     );
-  }
+  } //endrender
 }
 
 export default TrafficSituation;

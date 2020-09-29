@@ -7,25 +7,21 @@ class Map extends PureComponent {
     super(props);
     this.state = {
       renderer: 'canvas',
-      option: '',
     };
-  }
-  async componentDidMount() {
-    // 装载前获取数据
-    this.setState({
-      option: mapOptions,
-    });
   }
 
   render() {
-    const renderer = this.state.renderer;
+    const { renderer } = this.state;
+    const { mapData } = this.props;
     return (
       <div
         style={{
           width: '10.625rem',
           height: '8.125rem',
         }}>
-        <Chart renderer={renderer} option={this.state.option} />;
+          {
+            mapData?<Chart renderer={renderer} option={mapOptions(mapData)} />:''
+          }
       </div>
     );
   }

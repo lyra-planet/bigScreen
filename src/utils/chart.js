@@ -49,7 +49,6 @@ export default class Chart extends PureComponent {
   initChart = el => {
     // renderer 用于配置渲染方式 可以是 svg 或者 canvas
     const renderer = this.props.renderer || 'canvas';
-    console.log(renderer);
 
     return new Promise(resolve => {
       setTimeout(() => {

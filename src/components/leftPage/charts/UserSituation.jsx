@@ -27,24 +27,25 @@ class UserSituation extends PureComponent {
     };
   }
 
-  // 使用 DidMount 会导致列表严重卡顿，还没研究原因
-  async componentWillMount() {
-    // 装载前获取数据
-    this.setState({
-      config: { ...this.state.config, ...userOptions },
-    });
-  }
-
   render() {
-    const { config } = this.state;
+    const { userSitua } = this.props;
+    const config = {
+      ...this.state.config,
+      ...userOptions(userSitua),
+    };
+
     return (
       <div>
-        <ScrollBoard
-          config={config}
-          style={{
-            width: '5.475rem',
-            height: '6.875rem',
-          }}></ScrollBoard>
+        {userSitua ? (
+          <ScrollBoard
+            config={config}
+            style={{
+              width: '5.475rem',
+              height: '6.875rem',
+            }}></ScrollBoard>
+        ) : (
+          ''
+        )}
       </div>
     );
   }

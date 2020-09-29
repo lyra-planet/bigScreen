@@ -9,8 +9,10 @@ const app = dva();
 
 // 3. Model
 app.model(require('./models/leftPage').default);
+app.model(require('./models/centerPage').default);
+app.model(require('./models/rightPage').default);
 
-// 4. Router(import引入方式就是需要default)
+// 4. Router
 app.router(require('./router').default);
 
 // 5. Start

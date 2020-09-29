@@ -7,25 +7,22 @@ class OfflinePortal extends PureComponent {
     super(props);
     this.state = {
       renderer: 'canvas',
-      option: '',
     };
-  }
-  async componentDidMount() {
-    // 装载前获取数据
-    this.setState({
-      option: OfflinePortalOptions,
-    });
   }
 
   render() {
-    const renderer = this.state.renderer;
+    const { renderer } = this.state;
+    const { offlinePortalData } = this.props;
     return (
       <div
         style={{
           width: '5.375rem',
           height: '2.875rem',
         }}>
-        <Chart renderer={renderer} option={this.state.option} />;
+        <Chart
+          renderer={renderer}
+          option={OfflinePortalOptions(offlinePortalData)}
+        />
       </div>
     );
   }

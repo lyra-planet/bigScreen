@@ -1,7 +1,7 @@
-import { getLeftPageData } from '../services/index';
+import { getRightPageData } from '../services/index';
 export default {
   // 命名空间 (必填)
-  namespace: 'leftPage',
+  namespace: 'rightPage',
 
   // 数据
   state: {},
@@ -12,7 +12,7 @@ export default {
       return history.listen((location, action) => {
         // 参数可以直接简写成{pathname}
         if (location.pathname === '/') {
-          dispatch({ type: 'getLeftPageData' });
+          dispatch({ type: 'getRightPageData' });
         }
       });
     },
@@ -20,15 +20,15 @@ export default {
 
   // 异步请求
   effects: {
-    *getLeftPageData({ payload }, { call, put }) {
-      const data = yield call(getLeftPageData);
+    *getRightPageData({ payload }, { call, put }) {
+      const data = yield call(getRightPageData);
       if (data) {
         yield put({
           type: 'setData',
           payload: data,
         });
       } else {
-        console.log(`获取左侧数据数据失败`);
+        console.log(`获取右侧数据数据失败`);
       }
     },
   },

@@ -4,17 +4,15 @@ import { ModuleTitle } from '../../style/globalStyledSet';
 import { BorderBox12, BorderBox13 } from '@jiaminghi/data-view-react';
 import TrafficSituation from './charts/TrafficSituation';
 import UserSituation from './charts/UserSituation';
+import { connect } from 'dva';
 
 class index extends PureComponent {
   constructor(props) {
     super(props);
-    this.state = {
-      accessFrequency: 1500,
-      peakFlow: 300,
-    };
+    this.state = {};
   }
   render() {
-    const { accessFrequency, peakFlow } = this.state;
+    const { userSitua, trafficSitua, accessFrequency, peakFlow } = this.props;
     return (
       <LeftPage>
         {/* 顶部图表 */}
@@ -35,7 +33,8 @@ class index extends PureComponent {
                   <span className='title-dis-keyword'>{peakFlow}M</span>
                 </span>
               </div>
-              <TrafficSituation></TrafficSituation>
+              {/* 图表 */}
+              <TrafficSituation trafficSitua={trafficSitua}></TrafficSituation>
             </div>
           </BorderBox12>
         </LeftTopBox>
@@ -48,7 +47,8 @@ class index extends PureComponent {
                 <i className='iconfont'>&#xe88e;</i>
                 <span>用户数据状态</span>
               </ModuleTitle>
-              <UserSituation></UserSituation>
+              {/* 图表 */}
+              <UserSituation userSitua={userSitua}></UserSituation>
             </div>
           </BorderBox13>
         </LeftBottomBox>
@@ -57,4 +57,15 @@ class index extends PureComponent {
   }
 }
 
-export default index;
+const mapStateToProps = state => {
+  return {
+    accessFrequency: state.leftPage.accessFrequency,
+    peakFlow: state.leftPage.peakFlow,
+    userSitua: state.leftPage.userSitua,
+    trafficSitua: state.leftPage.trafficSitua,
+  };
+};
+
+const mapStateToDispatch = dispatch => ({});
+
+export default connect(mapStateToProps, mapStateToDispatch)(index);

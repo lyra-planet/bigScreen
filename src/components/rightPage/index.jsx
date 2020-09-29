@@ -5,6 +5,7 @@ import UserIdentityCategory from './charts/UserIdentityCategory';
 import OfflinePortal from './charts/OfflinePortal';
 import Feedback from './charts/Feedback';
 import { ModuleTitle } from '../../style/globalStyledSet';
+import { connect } from 'dva';
 import {
   RightPage,
   RightTopBox,
@@ -15,27 +16,10 @@ import {
 class index extends PureComponent {
   constructor(props) {
     super(props);
-    this.state = {
-      offline: {
-        feedback: [
-          {
-            title: '服务质量',
-            number: 90,
-          },
-          {
-            title: '交互体验',
-            number: 82,
-          },
-          {
-            title: '安全防护',
-            number: 85,
-          },
-        ],
-      },
-    };
+    this.state = {};
   }
   render() {
-    const { offline } = this.state;
+    const { offline, browseCategories, userIdentityCategory } = this.props;
     return (
       <RightPage>
         <RightTopBox>
@@ -45,7 +29,8 @@ class index extends PureComponent {
               <span>关联数据类别分布</span>
             </ModuleTitle>
             <div className='right-top-content'>
-              <BrowseCategories></BrowseCategories>
+              <BrowseCategories
+                browseCategories={browseCategories}></BrowseCategories>
               <img
                 alt='地球'
                 className='earth-gif'
@@ -60,7 +45,8 @@ class index extends PureComponent {
             <i className='iconfont'>&#xe7fd;</i>
             <span>平均用户类别排布</span>
           </ModuleTitle>
-          <UserIdentityCategory></UserIdentityCategory>
+          <UserIdentityCategory
+            userIdentityCategory={userIdentityCategory}></UserIdentityCategory>
         </RightCenterBox>
 
         <RightBottomBox>
@@ -72,18 +58,26 @@ class index extends PureComponent {
               </ModuleTitle>
               {/* 反馈 */}
               <div className='feedback-box'>
-                {offline.feedback.map((item, index) => {
-                  return (
-                    <div className='feedback-box-item' key={index}>
-                      <Feedback FeedbackData={item}></Feedback>
-                      <span className='dis-text'>{item.title}</span>
-                    </div>
-                  );
-                })}
+                {offline
+                  ? offline.feedback.map((item, index) => {
+                      return (
+                        <div className='feedback-box-item' key={index}>
+                          <Feedback FeedbackData={item}></Feedback>
+                          <span className='dis-text'>{item.title}</span>
+                        </div>
+                      );
+                    })
+                  : ''}
               </div>
               {/* 门店 */}
               <div className='offline-portal-box'>
-                <OfflinePortal></OfflinePortal>
+                {offline ? (
+                  <OfflinePortal
+                    offlinePortalData={offline.offlinePortalData}
+                  />
+                ) : (
+                  ''
+                )}
               </div>
             </div>
           </BorderBox13>
@@ -93,4 +87,14 @@ class index extends PureComponent {
   }
 }
 
-export default index;
+const mapStateToProps = state => {
+  return {
+    browseCategories: state.rightPage.browseCategories,
+    userIdentityCategory: state.rightPage.userIdentityCategory,
+    offline: state.rightPage.offline,
+  };
+};
+
+const mapStateToDispatch = dispatch => ({});
+
+export default connect(mapStateToProps, mapStateToDispatch)(index);

@@ -1,37 +1,7 @@
 import echarts from 'echarts/lib/echarts';
 
 // 关联数据类别
-const browseCategoriesData = {
-  data: [782, 621.2, 322.1, 525.3, 265, 224],
-  indicator: [
-    {
-      name: '食物',
-      max: 1000,
-    },
-    {
-      name: '娱乐',
-      max: 1000,
-    },
-    {
-      name: '运动',
-      max: 1000,
-    },
-    {
-      name: '家居',
-      max: 1000,
-    },
-    {
-      name: '机械',
-      max: 1000,
-    },
-    {
-      name: '学习',
-      max: 1000,
-    },
-  ],
-};
-
-export const browseCategoriesOptions = {
+export const BrowseCategoriesOptions = params => ({
   radar: {
     center: ['50%', '50%'],
     radius: '70%',
@@ -55,7 +25,7 @@ export const browseCategoriesOptions = {
     },
     // 名字和图形的距离
     nameGap: 5,
-    indicator: browseCategoriesData.indicator,
+    indicator: params.indicator,
     splitLine: {
       show: false,
     },
@@ -83,7 +53,7 @@ export const browseCategoriesOptions = {
     {
       name: '用户浏览类别',
       type: 'radar',
-      data: [browseCategoriesData.data],
+      data: [params.data],
       label: {
         show: false,
         formatter: function (params) {
@@ -108,38 +78,12 @@ export const browseCategoriesOptions = {
       },
     },
   ],
-};
-
-// 渠道类别
-export const userIdentityCategoryOptions = {
-  data: [
-    {
-      name: '公务',
-      value: 57,
-    },
-    {
-      name: '学生',
-      value: 167,
-    },
-    {
-      name: '教师',
-      value: 123,
-    },
-    {
-      name: '军区',
-      value: 55,
-    },
-    {
-      name: '企业',
-      value: 198,
-    },
-  ],
-};
+});
 
 // 反馈
-export const FeedbackOptions = FeedbackData => ({
+export const FeedbackOptions = params => ({
   title: {
-    text: `${FeedbackData.number}%`,
+    text: `${params.number}%`,
     left: '45%',
     top: '40%',
     textAlign: 'center',
@@ -158,8 +102,8 @@ export const FeedbackOptions = FeedbackData => ({
       center: ['50%', '50%'],
       data: [
         {
-          value: FeedbackData.number,
-          name: FeedbackData.title,
+          value: params.number,
+          name: params.title,
           itemStyle: {
             normal: {
               color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
@@ -201,7 +145,7 @@ export const FeedbackOptions = FeedbackData => ({
               },
             },
           },
-          value: 100 - FeedbackData.number,
+          value: 100 - params.number,
           hoverAnimation: true,
           itemStyle: {
             color: 'rgba(79,76,192, 0.3)',
@@ -212,16 +156,8 @@ export const FeedbackOptions = FeedbackData => ({
   ],
 });
 
-// 线下门店流量
-const OfflinePortalData = {
-  data1: [80, 152, 101, 134, 90, 130],
-  data2: [120, 182, 191, 210, 170, 110],
-  data3: [110, 132, 201, 154, 150, 80],
-  data4: [90, 142, 161, 114, 190, 170],
-  xData: ['9:00', '12:00', '15:00', '18:00', '21:00', '00:00'],
-};
-
-export const OfflinePortalOptions = {
+//  线下门店流量
+export const OfflinePortalOptions = params => ({
   color: ['#73A0FA', '#73DEB3', '#32C5E9', '#67E0E3'],
   tooltip: {
     trigger: 'axis',
@@ -252,7 +188,7 @@ export const OfflinePortalOptions = {
   xAxis: [
     {
       type: 'category',
-      data: OfflinePortalData.xData,
+      data: params.xData,
       axisLabel: {
         color: '#BCDCF0',
         textStyle: {
@@ -337,27 +273,27 @@ export const OfflinePortalOptions = {
     {
       name: '门店1',
       type: 'line',
-      data: OfflinePortalData.data1,
+      data: params.data1,
     },
     {
       name: '门店2',
       type: 'line',
-      data: OfflinePortalData.data2,
+      data: params.data2,
     },
     {
       name: '门店3',
       type: 'line',
-      data: OfflinePortalData.data3,
+      data: params.data3,
     },
     {
       name: '门店4',
       type: 'line',
-      data: OfflinePortalData.data4,
+      data: params.data4,
     },
     {
       name: '额度',
       type: 'bar',
-      data: [32.2, 60.0, 32.6, 36.4, 53.3, 35.0],
+      data: params.barData,
       itemStyle: {
         normal: {
           color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
@@ -380,4 +316,4 @@ export const OfflinePortalOptions = {
       barMaxWidth: 15,
     },
   ],
-};
+});

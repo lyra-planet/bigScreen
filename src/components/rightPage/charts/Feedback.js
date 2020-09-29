@@ -10,22 +10,21 @@ class Feedback extends PureComponent {
       option: '',
     };
   }
-  async componentDidMount() {
-    // 装载前获取数据
-    this.setState({
-      option: FeedbackOptions(this.props.FeedbackData),
-    });
-  }
 
   render() {
-    const renderer = this.state.renderer;
+    const { renderer } = this.state;
+    const { FeedbackData } = this.props;
     return (
       <div
         style={{
           width: '1.25rem',
           height: '1.25rem',
         }}>
-        <Chart renderer={renderer} option={this.state.option} />;
+        <Chart
+          renderer={renderer}
+          option={FeedbackOptions(FeedbackData)}
+        />
+        ;
       </div>
     );
   }
