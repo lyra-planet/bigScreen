@@ -1,8 +1,9 @@
 ## 一、项目描述
 
-- [**Vue 版本请点击这里查看，也很不错的(o ﾟ v ﾟ)ノ！！！**](https://gitee.com/MTrun/big-screen-vue-datav)
-
 - 一个基于 React、Dva、DataV、ECharts 框架的 " **数据大屏项目** "。支持数据动态刷新渲染、屏幕适配、数据请求模拟、局部样式、图表自由替换/复用等功能。
+
+- [**Vue3 版本请点击这里查看，使用 Hooks+TypeScript 实现，全新内容等你探索!**](https://gitee.com/MTrun/vue-big-screen-plugin)
+- [**Vue2 版本请点击这里查看，也很不错的(o ﾟ v ﾟ)ノ**](https://gitee.com/MTrun/big-screen-vue-datav)
 - 项目需要全屏展示（按 F11）。
 - 项目环境：react^16.2、webpack-4.0、npm-6.13、node-v12.16。
 - 请拉取 master 分支的代码，其余是开发分支。
