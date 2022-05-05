@@ -1,8 +1,6 @@
-**QQ交流群： 713105837 开源项目Vue/Vue3/React-big-screen交流群** 
+**通知：最新的低代码大屏系统GoView已开源，详见：[https://gitee.com/MTrun/go-view](https://gitee.com/MTrun/go-view)**
 
-QQ群二维码：
-
-![输入图片说明](public/image.png)
+![输入图片说明](https://gitee.com/MTrun/go-view/raw/master/public/logo-t-y.png)
 
 ## 一、项目描述
 
@@ -171,6 +169,12 @@ var _createHashHistory = _interopRequireDefault(
 
 后面可能会请朋友将项目修改为 Hook版本，切一个分支出来，也许会鸽🕊（不要打我）。
 
-## 五、其余
+## 五、反馈
+
+QQ群二维码：
+
+![输入图片说明](public/image.png)
+
+## 六、其余
 
 这个项目是个人的作品，难免会有问题和 BUG，如果有问题请进行评论，我也会尽力去更新，自己也在前端学习的路上，欢迎交流，非常感谢！
