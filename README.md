@@ -171,9 +171,9 @@ var _createHashHistory = _interopRequireDefault(
 
 ## 五、反馈
 
-QQ群二维码：
+QQ群：495755841
 
-![输入图片说明](public/image.png)
+<img src="public/QQ2.png" width="200px"/>
 
 ## 六、其余
 
