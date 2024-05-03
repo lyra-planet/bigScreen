@@ -92,7 +92,7 @@ export const trafficOptions = (params) => ({
   },
   series: [
     {
-      name: '出口流量',
+      name: '出口人数',
       type: 'line',
       smooth: true, //是否平滑
       lineStyle: {
@@ -144,7 +144,7 @@ export const trafficOptions = (params) => ({
       data: params.outData,
     },
     {
-      name: '入口流量',
+      name: '入口人数',
       type: 'line',
       smooth: true, //是否平滑
       // 阴影

@@ -3,34 +3,34 @@ module.exports = {
   'GET /api/centerPageData': {
     detailsList: [
       {
-        title: '图像转化流量',
+        title: '文章浏览流量',
         number: 260,
-        unit: '点击/张',
+        unit: '点击/天',
       },
       {
-        title: '视频转化流量',
+        title: '用户分享流量',
         number: 330,
-        unit: '点击/个',
+        unit: '点击/天',
       },
       {
-        title: '公众号流量',
-        number: 62356,
-        unit: '点击/篇',
+        title: '文物浏览流量',
+        number: 623,
+        unit: '点击/天',
       },
       {
         title: '安全服务流量',
-        number: 5453,
-        unit: '攻击/小时',
+        number: 54,
+        unit: '次/天',
       },
       {
-        title: '金融流量',
-        number: 4.65,
-        unit: ' 万/小时 ',
+        title: '数据上传流量',
+        number: 46.5,
+        unit: ' M/小时 ',
       },
       {
-        title: '通信流量',
-        number: 1250,
-        unit: 'M /分',
+        title: '旅客评论流量',
+        number: 125,
+        unit: '次/天',
       },
     ],
     mapData: {

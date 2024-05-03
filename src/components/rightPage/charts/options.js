@@ -179,7 +179,7 @@ export const OfflinePortalOptions = params => ({
     containLabel: true,
   },
   legend: {
-    data: ['门店1', '门店2', '门店3', '门店4'],
+    data: ['博物馆1', '博物馆2', '博物馆3', '博物馆4'],
     show: true,
     textStyle: {
       color: '#BCDCFF',
@@ -229,7 +229,7 @@ export const OfflinePortalOptions = params => ({
   yAxis: [
     {
       type: 'value',
-      name: '单位/人',
+      name: '人',
       nameTextStyle: {
         color: '#BCDCFF',
       },
@@ -271,22 +271,22 @@ export const OfflinePortalOptions = params => ({
   ],
   series: [
     {
-      name: '门店1',
+      name: '博物馆1',
       type: 'line',
       data: params.data1,
     },
     {
-      name: '门店2',
+      name: '博物馆2',
       type: 'line',
       data: params.data2,
     },
     {
-      name: '门店3',
+      name: '博物馆3',
       type: 'line',
       data: params.data3,
     },
     {
-      name: '门店4',
+      name: '博物馆4',
       type: 'line',
       data: params.data4,
     },

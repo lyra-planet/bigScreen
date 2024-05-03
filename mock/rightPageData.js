@@ -2,26 +2,26 @@
 module.exports = {
   'GET /api/rightPageData': {
     browseCategories: {
-      data: [782, 621.2, 322.1, 525.3, 265, 224],
+      data: [782, 821.2, 722.1, 625.3, 865, 524],
       indicator: [
         {
-          name: '食物',
+          name: '分享',
           max: 1000,
         },
         {
-          name: '娱乐',
+          name: '文物',
           max: 1000,
         },
         {
-          name: '运动',
+          name: '历史',
           max: 1000,
         },
         {
-          name: '家居',
+          name: '文化',
           max: 1000,
         },
         {
-          name: '机械',
+          name: '体验',
           max: 1000,
         },
         {
@@ -33,31 +33,31 @@ module.exports = {
     userIdentityCategory: {
       data: [
         {
-          name: '公务',
-          value: 57,
+          name: '北京',
+          value: 700,
         },
         {
-          name: '学生',
-          value: 167,
+          name: '甘肃',
+          value: 1000,
         },
         {
-          name: '教师',
-          value: 123,
+          name: '黑龙江',
+          value: 830,
         },
         {
-          name: '军区',
-          value: 55,
+          name: '湖南',
+          value: 750,
         },
         {
-          name: '企业',
-          value: 198,
+          name: '天津',
+          value: 980,
         },
       ],
     },
     offline: {
       feedback: [
         {
-          title: '服务质量',
+          title: '文物质量',
           number: 90,
         },
         {
@@ -65,7 +65,7 @@ module.exports = {
           number: 82,
         },
         {
-          title: '安全防护',
+          title: '学习交流',
           number: 85,
         },
       ],

@@ -43,7 +43,7 @@ class index extends PureComponent {
         <RightCenterBox>
           <ModuleTitle>
             <i className='iconfont'>&#xe7fd;</i>
-            <span>平均用户类别排布</span>
+            <span>热门城市浏览人数</span>
           </ModuleTitle>
           <UserIdentityCategory
             userIdentityCategory={userIdentityCategory}></UserIdentityCategory>
@@ -54,7 +54,7 @@ class index extends PureComponent {
             <div className='right-bottom'>
               <ModuleTitle>
                 <i className='iconfont'>&#xe790;</i>
-                <span>今日线下门户流量</span>
+                <span>今日关联博物馆流量</span>
               </ModuleTitle>
               {/* 反馈 */}
               <div className='feedback-box'>
